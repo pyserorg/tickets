@@ -5,6 +5,8 @@ IP != bin/getip.sh
 
 pre_up:
 	@echo "export REACT_NATIVE_PACKAGER_HOSTNAME=${IP}" >${ENV_FILE}
+
+post_up:
 	@echo "rdr pass proto tcp from any to any port { 19000, 19001 } -> ${SERVICE}.${DOMAIN}" | sudo pfctl -a cbsd -f -
 
 .if exists(provisioners.mk)

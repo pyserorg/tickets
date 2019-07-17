@@ -1,5 +1,6 @@
 ### Ansible ###
-.provisioned ansible/group_vars/all
+.provisioned
+ansible/group_vars/all
 ansible/inventory/inventory
 ansible/roles/*
 ansible/site.yml

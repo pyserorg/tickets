@@ -1,0 +1,8 @@
+---
+devel_packages:
+  - name: node
+  - name: yarn
+
+node_packages:
+  - name: expo
+  - name: expo-cli

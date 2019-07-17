@@ -11,3 +11,4 @@ site.retry
 vars.mk
 node_modules
 .expo
+.defaultip

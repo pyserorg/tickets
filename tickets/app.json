@@ -1,13 +1,12 @@
 {
   "expo": {
-    "name": "PySer",
-    "slug": "tickets",
+    "name": "PySer Tickets",
+    "slug": "pyser-tickets",
     "privacy": "public",
     "sdkVersion": "33.0.0",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,10 +19,12 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": [ "**/*" ],
+    "android": {
+      "package": "com.pyser.tickets"
+    },
     "ios": {
+      "bundleIdentifier": "com.pyser.tickets",
       "supportsTablet": true
     }
   }

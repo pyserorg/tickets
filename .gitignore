@@ -10,6 +10,7 @@ build/
 cbsd.conf
 site.retry
 vars.mk
+.defaultip
 
 ### ReactNative ###
 # React Native Stack Base

@@ -1,4 +1,6 @@
 #!/bin/sh
 
-cd /usr/src
-/bin/tcsh -l
+
+cd /usr/src/tickets
+. .defaultip
+expo start

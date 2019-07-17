@@ -1,5 +1,6 @@
 ---
 devel_packages:
+  - name: bash
   - name: node
   - name: yarn
 

@@ -3,7 +3,12 @@ devel_packages:
   - name: bash
   - name: node
   - name: yarn
+  - name: vips
 
 node_packages:
   - name: expo
+    version: 33.0.0
   - name: expo-cli
+    version: 2.21.2
+
+yarn_extra_path: "`yarn global bin`"

@@ -1,5 +1,6 @@
 #!/bin/sh
 
+. ${HOME}/.shrc
 
 cd /usr/src/tickets
 . .defaultip

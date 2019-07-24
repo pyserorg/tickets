@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Text } from 'react-native'
+import { View, StyleSheet, Image, Text } from 'react-native'
 
 import { screenStyles } from '../../styles/screenStyles';
 
@@ -11,6 +11,7 @@ class Home extends Component {
     render() {
         return (
             <View style={styles.centered}>
+                <Image style={logoStyles.logoWrapper} source={require('../../../assets/logo.png')} />
                 <Text>{this.state.title}</Text>
             </View>
         );
@@ -18,5 +19,11 @@ class Home extends Component {
 }
 
 const styles = StyleSheet.create(screenStyles);
+const logoStyles = StyleSheet.create({
+    logoWrapper: {
+        width: '70%',
+        resizeMode: 'contain',
+    },
+});
 
 export default Home;

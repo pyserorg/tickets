@@ -7,4 +7,9 @@
 
 - name: install global node packages
   with_items: "{{ node_packages }}"
-  command: "yarn global add {{ item.name }}"
+  become: yes
+  become_user: devel
+  yarn:
+    global: yes
+    name: "{{ item.name }}"
+    version: "{{ item.version }}"
